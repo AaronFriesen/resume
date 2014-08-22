@@ -1,4 +1,5 @@
 \documentclass{article}
+\usepackage[normalem]{ulem}
 \usepackage{fullpage}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -12,6 +13,8 @@
 
 \def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
 % DEFINITIONS FOR RESUME
+\renewcommand\underline{\bgroup\markoverwith{{\rule[-0.5ex]{2pt}{0.5pt}}}\ULon}
+
 \newcommand{\area}[2]{\vspace*{-9pt} \begin{verse}\textbf{#1}   #2 \end{verse}  }
 \newcommand{\lineunder}{\vspace*{-8pt} \\ \hspace*{-18pt} \hrulefill \\}
 \newcommand{\header}[1]{{\hspace*{-15pt}\vspace*{6pt} \textsc{#1}} \vspace*{-6pt} \lineunder}
@@ -53,7 +56,7 @@
 
 \schoolwithcourses{Georgia Institute of Technology}{Atlanta, GA, U.S.A.}{Bachelor of Science in Computer Sci., 2015 Threads: Intelligence/Media}
 {Cumulative GPA: 3.16}
-	\area{Computer Science}{ Intro to Object Oriented Programming $\cdot$ Data Structures and Algorithms $\cdot$ Computer Organization and Programming $\cdot$ Objects and Design $\cdot$ Computer Graphics $\cdot$ Intro to Artificial Intelligence $\cdot$ User Interface Design $\cdot$ Computer Audio $\cdot$ Game AI}
+	\area{Computer Science}{ Intro to Object Oriented Programming $\cdot$ Data Structures and Algorithms Computer Organization and Programming $\cdot$ Objects and Design $\cdot$ Computer Graphics \newline Intro to Artificial Intelligence $\cdot$ User Interface Design $\cdot$ Computer Audio $\cdot$ Game AI}
 	\area{Mathematics}{Calculus $\cdot$ Linear Algebra $\cdot$ Discrete Math $\cdot$ Applied Combinatorics}
 
 \vspace*{18pt}
@@ -64,28 +67,26 @@
     \item Developed internal and external tools aimed at localizing web content into 14 different locales
     \item Worked on a team of 11, coordinating projects and daily tasks
     \item Communicated about project goals, milestones, and progress on a daily basis
-    \item Worked with a large pre-existing localization framework, using heavy object-oriented design
     \end{achievements}
-
+\vspace*{7pt}
 \employer{WaveFocus, LLC}{May 2013-May 2014}{President and Team Leader}
 	\begin{achievements}
-	\item Developed commercially successful neurofeedback-enabled game in Unity for clinicians and researchers to treat Attention-Deficit Disorder, Post-Traumatic Stress Disorder, and other mental disorders
+	\item Developed commercially successful neurofeedback-enabled game in Unity for clinicians to treat Attention-Deficit Disorder, Post-Traumatic Stress Disorder, and other mental disorders
     \item Led a team of 7, coordinating goals and project milestones
-    \item Led the team's game design discussions and formulated approaches to various design issues
 	\end{achievements}
 
+\vspace*{7pt}
 \employer{Georgia Institute of Technology - College of Computing}{Sept. 2013-present}{Head Teaching Assistant}
     \begin{achievements}
-    \item Wrote weekly homework to teach freshmen-level Java and Object Oriented Programming principles
-	\item Managed team of 15 Teaching Assistants on weekly tasks and activities
-	\item Designed weekly recitation guides and grading guides for the TAs
-	\item Taught multiple lectures to approximately 200 students over various Java and Object Oriented Programming topics
+    \item Wrote weekly homework to teach Java and Object Oriented Programming principles
+	\item Managed team of 18 Teaching Assistants on weekly tasks and activities
+	\item Taught multiple lectures to approximately 450 students over Object Oriented Programming topics
 	\end{achievements}
-\employer{Georgia Institute of Technology - College of Computing}{2011-Sept. 2013}{Teaching Assistant}
+\vspace*{7pt}
+\employer{Georgia Institute of Technology - College of Computing}{Dec. 2011-Sept. 2013}{Teaching Assistant}
 
 	\begin{achievements}
-	\item Taught weekly recitations for 20-25 people covering Object-Oriented Programming topics
-	\item Held 6 weekly office hours for 1-on-1 sessions with struggling students to explain difficult programming topics
+	\item Taught weekly recitations and graded homework for 20-25 students
 	\item Graded weekly homework for 20-25 students, with emphasis on programming structure and style
 	\end{achievements}
 
